@@ -1,0 +1,3 @@
+SloPress
+========
+WordPress starter repo
