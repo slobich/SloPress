@@ -42,14 +42,14 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 */
 
 define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
-define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+define('WP_HOME',    'http://' . $_SERVER['HTTP_HOST']);
 
 /**
 * Define custom content directory.
 * @link https://github.com/markjaquith/WordPress-Skeleton
 */
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/content');
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
+define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 
 // ** Additional MySQL settings - You can get this info from your web host ** //
 
