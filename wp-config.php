@@ -59,6 +59,13 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/**
+* Disable all types of automatic updates
+* @link http://codex.wordpress.org/Configuring_Automatic_Background_Updates#All_Updates
+*/
+
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
